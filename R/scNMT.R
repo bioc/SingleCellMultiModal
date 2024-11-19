@@ -14,29 +14,22 @@
 #'   methylome and chromatin accessibility) technologies. For more
 #'   information, see Reik et al. (2018) DOI: 10.1038/s41467-018-03149-4
 #'
-#'   \itemize{
-#'       \item{mouse_gastrulation: }
-#'       this dataset provides cell quality control filters in the object 
-#'       `colData` starting from version 2.0.0.
-#'       Additionally, cell types annotations are provided through the `lineage`
-#'       `colData` column.
-#'       \itemize{
-#'           \item{rna} - RNA-seq
-#'           \item{acc_*} - chromatin accessibility
-#'           \item{met_*} - DNA methylation
-#'           \itemize{
-#'               \item{cgi} - CpG islands
-#'               \item{CTCF} - footprints of CTCF binding
-#'               \item{DHS} - DNase Hypersensitive Sites
-#'               \item{genebody} - gene bodies
-#'               \item{p300} - p300 binding sites
-#'               \item{promoter} - gene promoters
-#'           }
-#'       }
-#'   }
+#'  * mouse_gastrulation - this dataset provides cell quality control filters in
+#'  the object `colData` starting from version 2.0.0. Additionally, cell types
+#'  annotations are provided through the `lineage` `colData` column.
+#'      * rna - RNA-seq
+#'      * acc_\* - chromatin accessibility
+#'      * met_\* - DNA methylation
+#'          * cgi - CpG islands
+#'          * CTCF - footprints of CTCF binding
+#'          * DHS - DNase Hypersensitive Sites
+#'          * genebody - gene bodies
+#'          * p300 - p300 binding sites
+#'          * promoter - gene promoters
+#'
 #'   Special thanks to Al J Abadi for preparing the published data in time
 #'   for the 2020 BIRS Workshop, see the link here:
-#'   url{https://github.com/BIRSBiointegration/Hackathon/tree/master/scNMT-seq}
+#'   \url{https://github.com/BIRSBiointegration/Hackathon/tree/master/scNMT-seq}
 #'
 #' @section versions:
 #'   Version '1.0.0' of the scNMT mouse_gastrulation dataset includes all of
