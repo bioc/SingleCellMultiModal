@@ -1,9 +1,11 @@
 #' Single-cell spatial + Gene Expression
 #'
 #' @description seqFISH function assembles data on-the-fly from `ExperimentHub`
-#'     to provide a \linkS4class{MultiAssayExperiment} container. Actually
-#'     the `DataType` argument provides access to the available datasets
-#'     associated to the package.
+#'   to provide a
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   container. Actually the `DataType` argument provides access to the
+#'   available datasets associated to the package.
+#'
 #' @details seq FISH data are a combination of single cell spatial coordinates
 #'     and transcriptomics for a few hundreds of genes.
 #'     seq-FISH data can be combined for example with scRNA-seq data to unveil
@@ -40,7 +42,9 @@
 #' @param modes character( ) The assay types or modes of data to obtain these
 #'     include seq-FISH and scRNA-seq data by default.
 #'
-#' @return A \linkS4class{MultiAssayExperiment} of seq-FISH data
+#' @return A
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   of seq-FISH data
 #'
 #' @author Dario Righelli <dario.righelli <at> gmail.com>
 #'

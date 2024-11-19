@@ -1,11 +1,12 @@
 #' Single-cell RNA sequencing and proteomics
 #'
-#' @description SCoPE2 assembles data on-the-fly from `ExperimentHub`
-#'   to provide a \linkS4class{MultiAssayExperiment} container. The
-#'   `DataType` argument provides access to the `SCoPE2` dataset as
-#'   provided by Specht et al. (2020; DOI: http://dx.doi.org/10.1101/665307).
-#'   The article provides more information about the data
-#'   acquisition and pre-processing.
+#' @description SCoPE2 assembles data on-the-fly from `ExperimentHub` to provide
+#'   a
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   container. The `DataType` argument provides access to the `SCoPE2` dataset
+#'   as provided by Specht et al. (2020; DOI: http://dx.doi.org/10.1101/665307).
+#'   The article provides more information about the data acquisition and
+#'   pre-processing.
 #'
 #' @details The SCoPE2 study combines scRNA-seq (transcriptome) and
 #'   single-cell proteomics.
@@ -14,8 +15,8 @@
 #'       \item{macrophage_differentiation:} the cells are monocytes that undergo
 #'   macrophage differentiation. No annotation is available for the
 #'   transcriptome data, but batch and cell type annotations are
-#'   available for the proteomics data in the `celltype` `colData` column. 
-#'   The transcriptomics and proteomics data were not measured from the same 
+#'   available for the proteomics data in the `celltype` `colData` column.
+#'   The transcriptomics and proteomics data were not measured from the same
 #'   cells but from a distinct set of cell cultures.
 #'   This dataset provides already filtered bad quality cells.
 #'       \itemize{
@@ -38,8 +39,9 @@
 #' @param version character(1), currently only version '1.0.0' is
 #'   available
 #'
-#' @return A single cell multi-modal \linkS4class{MultiAssayExperiment} or
-#'   informative `data.frame` when `dry.run` is `TRUE`
+#' @return A single cell multi-modal
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   or informative `data.frame` when `dry.run` is `TRUE`
 #'
 #' @seealso SingleCellMultiModal-package
 #'

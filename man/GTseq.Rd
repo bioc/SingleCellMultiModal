@@ -34,18 +34,20 @@ download (default TRUE)}
 (down)loaded (default TRUE)}
 
 \item{...}{Additional arguments passed on to the
-\link[ExperimentHub]{ExperimentHub-class} constructor}
+\link[ExperimentHub:ExperimentHub-class]{ExperimentHub} constructor}
 }
 \value{
 A single cell multi-modal \linkS4class{MultiAssayExperiment} or
 informative \code{data.frame} when \code{dry.run} is \code{TRUE}
 }
 \description{
-GTseq assembles data on-the-fly from \code{ExperimentHub} to
-provide a \linkS4class{MultiAssayExperiment} container. The \code{DataType}
-argument provides access to the \code{mouse_embryo_8_cell} dataset as obtained
-from Macaulay et al. (2015). Protocol information for this dataset is
-available from Macaulay et al. (2016). See references.
+GTseq assembles data on-the-fly from \code{ExperimentHub} to provide
+a
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+container. The \code{DataType} argument provides access to the
+\code{mouse_embryo_8_cell} dataset as obtained from Macaulay et al. (2015).
+Protocol information for this dataset is available from Macaulay et al.
+(2016). See references.
 }
 \details{
 G&T-seq is a combination of Picoplex amplified gDNA sequencing

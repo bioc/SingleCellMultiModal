@@ -1,13 +1,14 @@
 #' Single-cell Nucleosome, Methylation and Transcription sequencing
 #'
-#' @description scNMT assembles data on-the-fly from `ExperimentHub` to
-#'     provide a \linkS4class{MultiAssayExperiment} container. The `DataType`
-#'     argument provides access to the `mouse_gastrulation` dataset as obtained
-#'     from Argelaguet et al. (2019; DOI: 10.1038/s41586-019-1825-8).
-#'     Pre-processing code can be seen at
-#'     \url{https://github.com/rargelaguet/scnmt_gastrulation}. Protocol
-#'     information for this dataset is available at Clark et al. (2018). See
-#'     the vignette for the full citation.
+#' @description scNMT assembles data on-the-fly from `ExperimentHub` to provide
+#'   a
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   container. The `DataType` argument provides access to the
+#'   `mouse_gastrulation` dataset as obtained from Argelaguet et al. (2019; DOI:
+#'   10.1038/s41586-019-1825-8). Pre-processing code can be seen at
+#'   \url{https://github.com/rargelaguet/scnmt_gastrulation}. Protocol
+#'   information for this dataset is available at Clark et al. (2018). See the
+#'   vignette for the full citation.
 #'
 #' @details scNMT is a combination of RNA-seq (transcriptome) and an adaptation
 #'   of Nucleosome Occupancy and Methylation sequencing (NOMe-seq, the
@@ -64,8 +65,9 @@
 #'
 #' @seealso SingleCellMultiModal-package
 #'
-#' @return A single cell multi-modal \linkS4class{MultiAssayExperiment} or
-#'   informative `data.frame` when `dry.run` is `TRUE`
+#' @return A single cell multi-modal
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   or informative `data.frame` when `dry.run` is `TRUE`
 #'
 #' @source \url{http://ftp.ebi.ac.uk/pub/databases/scnmt_gastrulation/}
 #'

@@ -6,7 +6,7 @@
 \title{SingleCellMultiModal-package}
 \description{
 The SingleCellMultiModal package provides a convenient and user-friendly
-representation of multi-modal data from project such as `scNMT` for mouse
+representation of multi-modal data from project such as \code{scNMT} for mouse
 gastrulation.
 }
 \examples{

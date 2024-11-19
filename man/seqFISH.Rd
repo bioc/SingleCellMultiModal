@@ -33,42 +33,46 @@ download (default TRUE)}
 \link[ExperimentHub]{ExperimentHub-class} constructor}
 }
 \value{
-A \linkS4class{MultiAssayExperiment} of seq-FISH data
+A
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+of seq-FISH data
 }
 \description{
-seqFISH function assembles data on-the-fly from `ExperimentHub`
-    to provide a \linkS4class{MultiAssayExperiment} container. Actually
-    the `DataType` argument provides access to the available datasets
-    associated to the package.
+seqFISH function assembles data on-the-fly from \code{ExperimentHub}
+to provide a
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+container. Actually the \code{DataType} argument provides access to the
+available datasets associated to the package.
 }
 \details{
 seq FISH data are a combination of single cell spatial coordinates
-    and transcriptomics for a few hundreds of genes.
-    seq-FISH data can be combined for example with scRNA-seq data to unveil
-    multiple aspects of cellular behaviour based on their spatial
-    organization and transcription.
+and transcriptomics for a few hundreds of genes.
+seq-FISH data can be combined for example with scRNA-seq data to unveil
+multiple aspects of cellular behaviour based on their spatial
+organization and transcription.
 
-    Available datasets are:
-    \itemize{
-        \item{mouse_visual_cortex: } combination of seq-FISH data as obtained
-        from Zhu et al. (2018) and scRNA-seq data as obtained from
-        Tasic et al. (2016),
-        Version 1.0.0 returns the full scRNA-seq data matrix, while version
-        2.0.0 returns the processed and subsetted scRNA-seq data matrix
-        (produced for the Mathematical Frameworks for Integrative Analysis
-        of Emerging Biological Data Types 2020 Workshop)
-        The returned seqFISH data are always the processed ones for the same
-        workshop.
-        Additionally, cell types annotations are available in the `colData`
-        through the `class` column in the seqFISH `assay`.
-        \itemize{
-            \item{scRNA_Counts} - Tasic scRNA-seq gene count matrix
-            \item{scRNA_Labels} - Tasic scRNA-seq cell labels
-            \item{seqFISH_Coordinates} - Zhu seq-FISH spatial coordinates
-            \item{seqFISH_Counts} - Zhu seq-FISH gene counts matrix
-            \item{seqFISH_Labels} - Zhu seq-FISH cell labels
-        }
-    }
+\if{html}{\out{<div class="sourceCode">}}\preformatted{Available datasets are:
+\\itemize\{
+    \\item\{mouse_visual_cortex: \} combination of seq-FISH data as obtained
+    from Zhu et al. (2018) and scRNA-seq data as obtained from
+    Tasic et al. (2016),
+    Version 1.0.0 returns the full scRNA-seq data matrix, while version
+    2.0.0 returns the processed and subsetted scRNA-seq data matrix
+    (produced for the Mathematical Frameworks for Integrative Analysis
+    of Emerging Biological Data Types 2020 Workshop)
+    The returned seqFISH data are always the processed ones for the same
+    workshop.
+    Additionally, cell types annotations are available in the `colData`
+    through the `class` column in the seqFISH `assay`.
+    \\itemize\{
+        \\item\{scRNA_Counts\} - Tasic scRNA-seq gene count matrix
+        \\item\{scRNA_Labels\} - Tasic scRNA-seq cell labels
+        \\item\{seqFISH_Coordinates\} - Zhu seq-FISH spatial coordinates
+        \\item\{seqFISH_Counts\} - Zhu seq-FISH gene counts matrix
+        \\item\{seqFISH_Labels\} - Zhu seq-FISH cell labels
+    \}
+\}
+}\if{html}{\out{</div>}}
 }
 \examples{
 
@@ -77,5 +81,5 @@ seqFISH(DataType = "mouse_visual_cortex", modes = "*", version = "2.0.0",
 
 }
 \author{
-Dario Righelli <dario.righelli <at> gmail.com>
+Dario Righelli <dario.righelli \if{html}{\out{<at>}} gmail.com>
 }

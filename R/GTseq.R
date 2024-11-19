@@ -9,11 +9,13 @@
 
 #' Parallel sequencing data of single-cell genomes and transcriptomes
 #'
-#' @description GTseq assembles data on-the-fly from `ExperimentHub` to
-#'     provide a \linkS4class{MultiAssayExperiment} container. The `DataType`
-#'     argument provides access to the `mouse_embryo_8_cell` dataset as obtained
-#'     from Macaulay et al. (2015). Protocol information for this dataset is
-#'     available from Macaulay et al. (2016). See references.
+#' @description GTseq assembles data on-the-fly from `ExperimentHub` to provide
+#'   a
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   container. The `DataType` argument provides access to the
+#'   `mouse_embryo_8_cell` dataset as obtained from Macaulay et al. (2015).
+#'   Protocol information for this dataset is available from Macaulay et al.
+#'   (2016). See references.
 #'
 #' @details G&T-seq is a combination of Picoplex amplified gDNA sequencing
 #'   (genome) and SMARTSeq2 amplified cDNA sequencing (transcriptome) of the
@@ -49,7 +51,7 @@
 #'   (down)loaded (default TRUE)
 #'
 #' @param ... Additional arguments passed on to the
-#'   \link[ExperimentHub]{ExperimentHub-class} constructor
+#'   [ExperimentHub][ExperimentHub::ExperimentHub-class] constructor
 #'
 #' @seealso SingleCellMultiModal-package
 #'

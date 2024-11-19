@@ -39,16 +39,18 @@ download (default TRUE)}
 \link[ExperimentHub]{ExperimentHub-class} constructor}
 }
 \value{
-A single cell multi-modal \linkS4class{MultiAssayExperiment} or
-informative \code{data.frame} when \code{dry.run} is \code{TRUE}
+A single cell multi-modal
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+or informative \code{data.frame} when \code{dry.run} is \code{TRUE}
 }
 \description{
-SCoPE2 assembles data on-the-fly from \code{ExperimentHub}
-to provide a \linkS4class{MultiAssayExperiment} container. The
-\code{DataType} argument provides access to the \code{SCoPE2} dataset as
-provided by Specht et al. (2020; DOI: http://dx.doi.org/10.1101/665307).
-The article provides more information about the data
-acquisition and pre-processing.
+SCoPE2 assembles data on-the-fly from \code{ExperimentHub} to provide
+a
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+container. The \code{DataType} argument provides access to the \code{SCoPE2} dataset
+as provided by Specht et al. (2020; DOI: http://dx.doi.org/10.1101/665307).
+The article provides more information about the data acquisition and
+pre-processing.
 }
 \details{
 The SCoPE2 study combines scRNA-seq (transcriptome) and

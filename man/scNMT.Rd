@@ -38,18 +38,20 @@ download (default TRUE)}
 \link[ExperimentHub]{ExperimentHub-class} constructor}
 }
 \value{
-A single cell multi-modal \linkS4class{MultiAssayExperiment} or
-informative \code{data.frame} when \code{dry.run} is \code{TRUE}
+A single cell multi-modal
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+or informative \code{data.frame} when \code{dry.run} is \code{TRUE}
 }
 \description{
-scNMT assembles data on-the-fly from \code{ExperimentHub} to
-provide a \linkS4class{MultiAssayExperiment} container. The \code{DataType}
-argument provides access to the \code{mouse_gastrulation} dataset as obtained
-from Argelaguet et al. (2019; DOI: 10.1038/s41586-019-1825-8).
-Pre-processing code can be seen at
+scNMT assembles data on-the-fly from \code{ExperimentHub} to provide
+a
+\code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
+container. The \code{DataType} argument provides access to the
+\code{mouse_gastrulation} dataset as obtained from Argelaguet et al. (2019; DOI:
+10.1038/s41586-019-1825-8). Pre-processing code can be seen at
 \url{https://github.com/rargelaguet/scnmt_gastrulation}. Protocol
-information for this dataset is available at Clark et al. (2018). See
-the vignette for the full citation.
+information for this dataset is available at Clark et al. (2018). See the
+vignette for the full citation.
 }
 \details{
 scNMT is a combination of RNA-seq (transcriptome) and an adaptation

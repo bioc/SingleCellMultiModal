@@ -137,10 +137,11 @@
 }
 
 #' CITEseq
-#' @description function assembles data on-the-fly from `ExperimentHub`
-#'     to provide a \linkS4class{MultiAssayExperiment} container. Actually
-#'     the `dataType` argument provides access to the available datasets
-#'     associated to the package.
+#' @description function assembles data on-the-fly from `ExperimentHub` to
+#'   provide a
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   container. Actually the `dataType` argument provides access to the
+#'   available datasets associated to the package.
 #' @author Dario Righelli
 #' @details CITEseq data are a combination of single cell transcriptomics and
 #'     about a hundread of cell surface proteins.
@@ -216,11 +217,11 @@
 #' Executed code can be retrieved in the CITEseq_filtering.R script of this
 #' package.
 #'
-#' @return A single cell multi-modal \linkS4class{MultiAssayExperiment} or
-#'     informative `data.frame` when `dry.run` is `TRUE`.
-#'     When `DataClass` is `SingleCellExperiment` an object of this class
-#'     is returned with an RNA assay as main experiment and other assay(s)
-#'     as `AltExp(s)`.
+#' @return A single cell multi-modal
+#'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
+#'   or informative `data.frame` when `dry.run` is `TRUE`. When `DataClass` is
+#'   `SingleCellExperiment` an object of this class is returned with an RNA
+#'   assay as main experiment and other assay(s) as `AltExp(s)`.
 #' @references Stoeckius et al. (2017), Mimitou et al. (2019)
 #' @export
 #'

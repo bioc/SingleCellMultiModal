@@ -7,20 +7,20 @@
 ontomap(dataset = c("scNMT", "scMultiome", "SCoPE2", "CITEseq", "seqFISH"))
 }
 \arguments{
-\item{dataset}{`character()` One of the existing functions within the
+\item{dataset}{\code{character()} One of the existing functions within the
 package. If missing, a map of all cell types in each function will
 be provided.}
 }
 \value{
-A `data.frame` of metadata with cell types and ontologies
+A \code{data.frame} of metadata with cell types and ontologies
 }
 \description{
-The `ontomap` function provides a mapping of all the cell names across the
+The \code{ontomap} function provides a mapping of all the cell names across the
 all the data sets or for a specified data set.
 }
 \details{
-Note that `CITEseq` does not have any cell annotations; therefore, no entries
-are present in the `ontomap`.
+Note that \code{CITEseq} does not have any cell annotations; therefore, no entries
+are present in the \code{ontomap}.
 }
 \examples{
 
