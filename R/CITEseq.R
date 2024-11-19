@@ -277,9 +277,11 @@ CITEseq <- function(DataType=c("cord_blood", "peripheral_blood"), modes="*",
 #' If only one modality is present, it has returned as main assay of the SCE.
 #'
 #' @importFrom MultiAssayExperiment experiments
-#' @importFrom SummarizedExperiment SummarizedExperiment
-#' @importFrom SingleCellExperiment SingleCellExperiment altExps colData counts
+#' @importFrom SummarizedExperiment SummarizedExperiment assays<-
+#' @importFrom SingleCellExperiment SingleCellExperiment altExp altExp<- altExps
+#'   altExps<- colData counts
 #' @importFrom methods is
+#' @importFrom S4Vectors SimpleList
 #' @keywords internal
 .CITEseqMaeToSce <- function(mae)
 {
@@ -287,7 +289,7 @@ CITEseq <- function(DataType=c("cord_blood", "peripheral_blood"), modes="*",
 
     cs <- colnames(mae[[1]])
     for ( i in seq_along(mae)[-1]) { cs <- intersect(cs, colnames(mae[[i]])) }
-    
+
     scelist <- lapply(seq_along(mae), function(i)
     {
         sce <- SingleCellExperiment(list(counts=mae[[i]]))
@@ -297,7 +299,7 @@ CITEseq <- function(DataType=c("cord_blood", "peripheral_blood"), modes="*",
         return(sce)
     })
     names(scelist) <- names(mae)
-    
+
     idx <- grep("scRNA", names(scelist))
     if (length(idx) != 0 )
     {
