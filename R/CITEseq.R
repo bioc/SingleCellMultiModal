@@ -144,51 +144,40 @@
 #'   available datasets associated to the package.
 #' @author Dario Righelli
 #' @details CITEseq data are a combination of single cell transcriptomics and
-#'     about a hundread of cell surface proteins.
+#'   about a hundread of cell surface proteins.
+#'   Available datasets are:
+#'   * cord_blood: a dataset of single cells of cord blood as
+#'   provided in Stoeckius et al. (2017).
+#'      * scRNA_Counts - Stoeckius scRNA-seq gene count matrix
+#'      * scADT - Stoeckius antibody-derived tags (ADT) data
+#'   * peripheral_blood: a dataset of single cells of peripheral
+#'   blood as provided in Mimitou et al. (2019). We provide two different
+#'   conditions controls (CTRL) and Cutaneous T-cell Limphoma (CTCL). Just build
+#'   appropriate `modes` regex for subselecting the dataset modes.
+#'      * scRNA - Mimitou scRNA-seq gene count matrix
+#'      * scADT - Mimitou antibody-derived tags (ADT) data
+#'      * scHTO - Mimitou Hashtag Oligo (HTO) data
+#'      * TCRab - Mimitou T-cell Receptors (TCR) alpha and beta
+#'      available through the object metadata.
+#'      * TCRgd - Mimitou T-cell Receptors (TCR) gamma and delta
+#'      available through the object metadata.
 #'
-#'     Available datasets are:
-#'     \itemize{
-#'         \item{cord_blood:} a dataset of single cells of cord blood as
-#'         provided in Stoeckius et al. (2017).
-#'          \itemize{
-#'             \item{scRNA_Counts} - Stoeckius scRNA-seq gene count matrix
-#'             \item{scADT} - Stoeckius antibody-derived tags (ADT) data
-#'             }
-#'      }
-#'      \itemize{
-#'         \item{peripheral_blood:} a dataset of single cells of peripheral
-#'         blood as provided in Mimitou et al. (2019).
-#'         We provide two different conditions controls (CTRL) and
-#'         Cutaneous T-cell Limphoma (CTCL).
-#'         Just build appropriate \code{modes} regex for subselecting the
-#'         dataset modes.
-#'          \itemize{
-#'             \item{scRNA} - Mimitou scRNA-seq gene count matrix
-#'             \item{scADT} - Mimitou antibody-derived tags (ADT) data
-#'             \item{scHTO} - Mimitou Hashtag Oligo (HTO) data
-#'             \item{TCRab} - Mimitou T-cell Receptors (TCR) alpha and beta
-#'             available through the object metadata.
-#'             \item{TCRgd} - Mimitou T-cell Receptors (TCR) gamma and delta
-#'             available through the object metadata.
-#'             }
-#'      }
-#'
-#' @param DataType character(1) indicating the identifier of the dataset to
+#' @param DataType `character(1)` indicating the identifier of the dataset to
 #'     retrieve.  (default "cord_blood")
 #'
-#' @param modes character() The assay types or modes of data to obtain these
+#' @param modes `character()` The assay types or modes of data to obtain these
 #'     include scADT and scRNA-seq data by default.
 #'
-#' @param version character(1) Either version '1.0.0' depending on
+#' @param version `character(1)` Either version '1.0.0' depending on
 #'     data version required.
-#' @param dry.run logical(1) Whether to return the dataset names before actual
-#'     download (default TRUE)
-#' @param filtered logical(1) indicating if the returned dataset needs to
+#' @param dry.run `logical(1)` Whether to return the dataset names before actual
+#'     download (default `TRUE`)
+#' @param filtered `logical(1)` indicating if the returned dataset needs to
 #'     have filtered cells.
 #'     See Details for additional information about the filtering process.
 #'
-#' @param verbose logical(1) Whether to show the dataset currently being
-#'     (down)loaded (default TRUE)
+#' @param verbose `logical(1)` Whether to show the dataset currently being
+#'     (down)loaded (default `TRUE`)
 #'
 #' @param ... Additional arguments passed on to the
 #'     \link[ExperimentHub]{ExperimentHub-class} constructor

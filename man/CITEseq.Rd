@@ -16,24 +16,24 @@ CITEseq(
 )
 }
 \arguments{
-\item{DataType}{character(1) indicating the identifier of the dataset to
+\item{DataType}{\code{character(1)} indicating the identifier of the dataset to
 retrieve.  (default "cord_blood")}
 
-\item{modes}{character() The assay types or modes of data to obtain these
+\item{modes}{\code{character()} The assay types or modes of data to obtain these
 include scADT and scRNA-seq data by default.}
 
-\item{version}{character(1) Either version '1.0.0' depending on
+\item{version}{\code{character(1)} Either version '1.0.0' depending on
 data version required.}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{filtered}{logical(1) indicating if the returned dataset needs to
+\item{filtered}{\code{logical(1)} indicating if the returned dataset needs to
 have filtered cells.
 See Details for additional information about the filtering process.}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{DataClass}{either MultiAssayExperiment or SingleCellExperiment
 data classes can be returned (default MultiAssayExperiment)}
@@ -58,34 +58,28 @@ available datasets associated to the package.
 \details{
 CITEseq data are a combination of single cell transcriptomics and
 about a hundread of cell surface proteins.
-
-\if{html}{\out{<div class="sourceCode">}}\preformatted{Available datasets are:
-\\itemize\{
-    \\item\{cord_blood:\} a dataset of single cells of cord blood as
-    provided in Stoeckius et al. (2017).
-     \\itemize\{
-        \\item\{scRNA_Counts\} - Stoeckius scRNA-seq gene count matrix
-        \\item\{scADT\} - Stoeckius antibody-derived tags (ADT) data
-        \}
- \}
- \\itemize\{
-    \\item\{peripheral_blood:\} a dataset of single cells of peripheral
-    blood as provided in Mimitou et al. (2019).
-    We provide two different conditions controls (CTRL) and
-    Cutaneous T-cell Limphoma (CTCL).
-    Just build appropriate \code{modes} regex for subselecting the
-    dataset modes.
-     \\itemize\{
-        \\item\{scRNA\} - Mimitou scRNA-seq gene count matrix
-        \\item\{scADT\} - Mimitou antibody-derived tags (ADT) data
-        \\item\{scHTO\} - Mimitou Hashtag Oligo (HTO) data
-        \\item\{TCRab\} - Mimitou T-cell Receptors (TCR) alpha and beta
-        available through the object metadata.
-        \\item\{TCRgd\} - Mimitou T-cell Receptors (TCR) gamma and delta
-        available through the object metadata.
-        \}
- \}
-}\if{html}{\out{</div>}}
+Available datasets are:
+\itemize{
+\item cord_blood: a dataset of single cells of cord blood as
+provided in Stoeckius et al. (2017).
+\itemize{
+\item scRNA_Counts - Stoeckius scRNA-seq gene count matrix
+\item scADT - Stoeckius antibody-derived tags (ADT) data
+}
+\item peripheral_blood: a dataset of single cells of peripheral
+blood as provided in Mimitou et al. (2019). We provide two different
+conditions controls (CTRL) and Cutaneous T-cell Limphoma (CTCL). Just build
+appropriate \code{modes} regex for subselecting the dataset modes.
+\itemize{
+\item scRNA - Mimitou scRNA-seq gene count matrix
+\item scADT - Mimitou antibody-derived tags (ADT) data
+\item scHTO - Mimitou Hashtag Oligo (HTO) data
+\item TCRab - Mimitou T-cell Receptors (TCR) alpha and beta
+available through the object metadata.
+\item TCRgd - Mimitou T-cell Receptors (TCR) gamma and delta
+available through the object metadata.
+}
+}
 
 If \code{filtered} parameter is \code{FALSE} (default), the \code{colData} of the returned
 object contains multiple columns of \code{logicals} indicating the cells to be

@@ -6,7 +6,7 @@
 #'   container. The `DataType` argument provides access to the
 #'   `mouse_gastrulation` dataset as obtained from Argelaguet et al. (2019; DOI:
 #'   10.1038/s41586-019-1825-8). Pre-processing code can be seen at
-#'   \url{https://github.com/rargelaguet/scnmt_gastrulation}. Protocol
+#'   <https://github.com/rargelaguet/scnmt_gastrulation>. Protocol
 #'   information for this dataset is available at Clark et al. (2018). See the
 #'   vignette for the full citation.
 #'
@@ -30,7 +30,7 @@
 #'
 #'   Special thanks to Al J Abadi for preparing the published data in time
 #'   for the 2020 BIRS Workshop, see the link here:
-#'   \url{https://github.com/BIRSBiointegration/Hackathon/tree/master/scNMT-seq}
+#'   <https://github.com/BIRSBiointegration/Hackathon/tree/master/scNMT-seq>
 #'
 #' @section versions:
 #'   Version '1.0.0' of the scNMT mouse_gastrulation dataset includes all of
@@ -43,22 +43,22 @@
 #'   The `MultiAssayExperiment` metadata includes the original function call
 #'   that saves the function call and the data version requested.
 #'
-#' @param DataType character(1) Indicates study that produces this type of
+#' @param DataType `character(1)` Indicates study that produces this type of
 #'   data (default: 'mouse_gastrulation')
 #'
-#' @param modes character() A wildcard / glob pattern of modes, such as
-#'   \code{"acc*"}. A wildcard of \code{"*"} will return all modes including
+#' @param modes `character()` A wildcard / glob pattern of modes, such as
+#'   `"acc*"`. A wildcard of `"*"` will return all modes including
 #'   Chromatin Accessibilty ("acc"), Methylation ("met"), RNA-seq ("rna")
 #'   which is the default.
 #'
-#' @param version character(1) Either version '1.0.0' or '2.0.0' depending on
+#' @param version `character(1)` Either version '1.0.0' or '2.0.0' depending on
 #'   data version required (default '1.0.0'). See version section.
 #'
-#' @param dry.run logical(1) Whether to return the dataset names before actual
-#'   download (default TRUE)
+#' @param dry.run `logical(1)` Whether to return the dataset names before actual
+#'   download (default `TRUE`)
 #'
-#' @param verbose logical(1) Whether to show the dataset currently being
-#'   (down)loaded (default TRUE)
+#' @param verbose `logical(1)` Whether to show the dataset currently being
+#'   (down)loaded (default `TRUE`)
 #'
 #' @param ... Additional arguments passed on to the
 #'   \link[ExperimentHub]{ExperimentHub-class} constructor
@@ -69,12 +69,10 @@
 #'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
 #'   or informative `data.frame` when `dry.run` is `TRUE`
 #'
-#' @source \url{http://ftp.ebi.ac.uk/pub/databases/scnmt_gastrulation/}
+#' @source <http://ftp.ebi.ac.uk/pub/databases/scnmt_gastrulation/>
 #'
 #' @references
 #'   Argelaguet et al. (2019)
-#'
-#' @md
 #'
 #' @examples
 #'

@@ -15,24 +15,24 @@ scMultiome(
 )
 }
 \arguments{
-\item{DataType}{character(1) Indicates study that produces this type of
+\item{DataType}{\code{character(1)} Indicates study that produces this type of
 data (default: 'mouse_gastrulation')}
 
-\item{modes}{character() A wildcard / glob pattern of modes, such as
+\item{modes}{\code{character()} A wildcard / glob pattern of modes, such as
 \code{"acc*"}. A wildcard of \code{"*"} will return all modes including
 Chromatin Accessibilty ("acc"), Methylation ("met"), RNA-seq ("rna")
 which is the default.}
 
-\item{version}{character(1) Either version '1.0.0' or '2.0.0' depending on
+\item{version}{\code{character(1)} Either version '1.0.0' or '2.0.0' depending on
 data version required (default '1.0.0'). See version section.}
 
-\item{format}{Either MTX or HDF5 data format (default MTX)}
+\item{format}{\code{character(1)} Either MTX or HDF5 data format (default MTX)}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{...}{Additional arguments passed on to the
 \link[ExperimentHub]{ExperimentHub-class} constructor}
@@ -49,10 +49,10 @@ different cell types. Data prepared by Ricard Argelaguet.
 }
 \details{
 Users are able to choose from either an \code{MTX} or \code{HDF5} file format
-as the internal data representation. The \code{MTX} (Matrix Market)
-format allows users to load a sparse \code{dgCMatrix} representation.
-Choosing \code{HDF5} gives users a sparse \code{HDF5Array} class object.
-\itemize{pbmc_10x:} 10K Peripheral Blood Mononuclear Cells provided by
+as the internal data representation. The \code{MTX} (Matrix Market) format
+allows users to load a sparse \code{dgCMatrix} representation. Choosing \code{HDF5}
+gives users a sparse \code{HDF5Array} class object.
+* pbmc_10x: 10K Peripheral Blood Mononuclear Cells provided by
 \href{https://support.10xgenomics.com/single-cell-multiome-atac-gex/datasets}{10x Genomics website}
 Cell quality control filters are available in the object \code{colData}
 together with the \code{celltype} annotation labels.

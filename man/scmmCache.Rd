@@ -19,16 +19,16 @@ removeCache(accession)
 \arguments{
 \item{...}{For \code{scmmCache}, arguments passed to \code{setCache}}
 
-\item{directory}{character(1) The file location where the cache is located.
+\item{directory}{\code{character(1)} The file location where the cache is located.
 Once set, future downloads will go to this folder. See \code{setCache} section
 for details.}
 
 \item{verbose}{Whether to print descriptive messages}
 
-\item{ask}{logical(1) (default TRUE when \code{interactive()}) Confirm the file
+\item{ask}{\code{logical(1)} (default TRUE when \code{interactive()}) Confirm the file
 location of the cache directory}
 
-\item{accession}{character(1) A single string indicating the accession number
+\item{accession}{\code{character(1)} A single string indicating the accession number
 of the study}
 }
 \value{

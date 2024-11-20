@@ -18,22 +18,22 @@ SCoPE2(
 )
 }
 \arguments{
-\item{DataType}{character(1) Indicates study that produces this type of
+\item{DataType}{\code{character(1)} Indicates study that produces this type of
 data (default: 'macrophage_differentiation')}
 
-\item{modes}{character() A wildcard / glob pattern of modes, such as
+\item{modes}{\code{character()} A wildcard / glob pattern of modes, such as
 \code{"rna"}. A wildcard of \code{"*"} will return all modes, that are
 transcriptome ("rna") or proteome ("protein") which is the
 default.}
 
-\item{version}{character(1), currently only version '1.0.0' is
+\item{version}{\code{character(1)}, currently only version '1.0.0' is
 available}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{...}{Additional arguments passed on to the
 \link[ExperimentHub]{ExperimentHub-class} constructor}
@@ -48,16 +48,15 @@ SCoPE2 assembles data on-the-fly from \code{ExperimentHub} to provide
 a
 \code{\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment}}
 container. The \code{DataType} argument provides access to the \code{SCoPE2} dataset
-as provided by Specht et al. (2020; DOI: http://dx.doi.org/10.1101/665307).
-The article provides more information about the data acquisition and
-pre-processing.
+as provided by Specht et al. (2020; DOI:
+\url{http://dx.doi.org/10.1101/665307}). The article provides more information
+about the data acquisition and pre-processing.
 }
 \details{
 The SCoPE2 study combines scRNA-seq (transcriptome) and
 single-cell proteomics.
-
 \itemize{
-\item{macrophage_differentiation:} the cells are monocytes that undergo
+\item macrophage_differentiation: the cells are monocytes that undergo
 macrophage differentiation. No annotation is available for the
 transcriptome data, but batch and cell type annotations are
 available for the proteomics data in the \code{celltype} \code{colData} column.
@@ -65,9 +64,9 @@ The transcriptomics and proteomics data were not measured from the same
 cells but from a distinct set of cell cultures.
 This dataset provides already filtered bad quality cells.
 \itemize{
-\item{scRNAseq1} - single-cell transcriptome (batch 1)
-\item{scRNAseq2} - single-cell transcriptome (batch 2)
-\item{scp} - single-cell proteomics
+\item scRNAseq1 - single-cell transcriptome (batch 1)
+\item scRNAseq2 - single-cell transcriptome (batch 2)
+\item scp - single-cell proteomics
 }
 }
 }

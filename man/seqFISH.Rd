@@ -14,20 +14,20 @@ seqFISH(
 )
 }
 \arguments{
-\item{DataType}{character(1) indicating the identifier of the dataset to
+\item{DataType}{\code{character(1)} indicating the identifier of the dataset to
 retrieve.  (default "mouse_visual_cortex")}
 
-\item{modes}{character( ) The assay types or modes of data to obtain these
+\item{modes}{\code{character()} The assay types or modes of data to obtain these
 include seq-FISH and scRNA-seq data by default.}
 
-\item{version}{character(1) Either version '1.0.0' or '2.0.0' depending on
+\item{version}{\code{character(1)} Either version '1.0.0' or '2.0.0' depending on
 data version required (default '1.0.0'). See version section.}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{...}{Additional arguments passed on to the
 \link[ExperimentHub]{ExperimentHub-class} constructor}
@@ -46,33 +46,29 @@ available datasets associated to the package.
 }
 \details{
 seq FISH data are a combination of single cell spatial coordinates
-and transcriptomics for a few hundreds of genes.
-seq-FISH data can be combined for example with scRNA-seq data to unveil
-multiple aspects of cellular behaviour based on their spatial
-organization and transcription.
+and transcriptomics for a few hundreds of genes. seq-FISH data can be
+combined for example with scRNA-seq data to unveil multiple aspects of
+cellular behaviour based on their spatial organization and transcription.
 
-\if{html}{\out{<div class="sourceCode">}}\preformatted{Available datasets are:
-\\itemize\{
-    \\item\{mouse_visual_cortex: \} combination of seq-FISH data as obtained
-    from Zhu et al. (2018) and scRNA-seq data as obtained from
-    Tasic et al. (2016),
-    Version 1.0.0 returns the full scRNA-seq data matrix, while version
-    2.0.0 returns the processed and subsetted scRNA-seq data matrix
-    (produced for the Mathematical Frameworks for Integrative Analysis
-    of Emerging Biological Data Types 2020 Workshop)
-    The returned seqFISH data are always the processed ones for the same
-    workshop.
-    Additionally, cell types annotations are available in the `colData`
-    through the `class` column in the seqFISH `assay`.
-    \\itemize\{
-        \\item\{scRNA_Counts\} - Tasic scRNA-seq gene count matrix
-        \\item\{scRNA_Labels\} - Tasic scRNA-seq cell labels
-        \\item\{seqFISH_Coordinates\} - Zhu seq-FISH spatial coordinates
-        \\item\{seqFISH_Counts\} - Zhu seq-FISH gene counts matrix
-        \\item\{seqFISH_Labels\} - Zhu seq-FISH cell labels
-    \}
-\}
-}\if{html}{\out{</div>}}
+Available datasets are:
+\itemize{
+\item mouse_visual_cortex: combination of seq-FISH data as obtained from Zhu
+et al. (2018) and scRNA-seq data as obtained from Tasic et al. (2016),
+Version 1.0.0 returns the full scRNA-seq data matrix, while version 2.0.0
+returns the processed and subsetted scRNA-seq data matrix (produced for
+the Mathematical Frameworks for Integrative Analysis of Emerging
+Biological Data Types 2020 Workshop) The returned seqFISH data are always
+the processed ones for the same workshop. Additionally, cell types
+annotations are available in the \code{colData} through the \code{class} column in
+the seqFISH \code{assay}.
+\itemize{
+\item scRNA_Counts - Tasic scRNA-seq gene count matrix
+\item scRNA_Labels - Tasic scRNA-seq cell labels
+\item seqFISH_Coordinates - Zhu seq-FISH spatial coordinates
+\item seqFISH_Counts - Zhu seq-FISH gene counts matrix
+\item seqFISH_Labels - Zhu seq-FISH cell labels
+}
+}
 }
 \examples{
 

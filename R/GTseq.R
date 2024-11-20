@@ -20,45 +20,42 @@
 #' @details G&T-seq is a combination of Picoplex amplified gDNA sequencing
 #'   (genome) and SMARTSeq2 amplified cDNA sequencing (transcriptome) of the
 #'   same cell. For more information, see Macaulay et al. (2015).
-#'   \itemize{
-#'       \item{mouse_embryo_8_cell:}
-#'       this dataset was filtered for bad cells as specified in Macaulay
-#'       et al. (2015).
-#'       \itemize{
-#'           \item{genomic} - integer copy numbers as detected from scDNA-seq
-#'           \item{transcriptomic} - raw read counts as quantified from scRNA-seq
-#'       }
-#'   }
+#'     * mouse_embryo_8_cell:
+#'     this dataset was filtered for bad cells as specified in Macaulay
+#'     et al. (2015).
+#'         * genomic - integer copy numbers as detected from scDNA-seq
+#'         * transcriptomic - raw read counts as quantified from scRNA-seq
 #'
 #' @section metadata:
 #'   The `MultiAssayExperiment` metadata includes the original function call
 #'   that saves the function call and the data version requested.
 #'
-#' @param DataType character(1) Indicates study that produces this type of
+#' @param DataType `character(1)` Indicates study that produces this type of
 #'   data (default: 'mouse_embryo_8_cell')
 #'
-#' @param modes character() A wildcard / glob pattern of modes, such as
-#'   \code{"*omic"}. A wildcard of \code{"*"} will return all modes including
+#' @param modes `character()` A wildcard / glob pattern of modes, such as
+#'   `"*omic"`. A wildcard of `"*"` will return all modes including
 #'   copy numbers ("genomic") and RNA-seq read counts ("transcriptomic"),
 #'   which is the default.
 #'
-#' @param version character(1). Currently, only version '1.0.0'.
+#' @param version `character(1)` Currently, only version '1.0.0'.
 #'
-#' @param dry.run logical(1) Whether to return the dataset names before actual
-#'   download (default TRUE)
+#' @param dry.run `logical(1)` Whether to return the dataset names before actual
+#'   download (default `TRUE`)
 #'
-#' @param verbose logical(1) Whether to show the dataset currently being
-#'   (down)loaded (default TRUE)
+#' @param verbose `logical(1)` Whether to show the dataset currently being
+#'   (down)loaded (default `TRUE`)
 #'
 #' @param ... Additional arguments passed on to the
 #'   [ExperimentHub][ExperimentHub::ExperimentHub-class] constructor
 #'
 #' @seealso SingleCellMultiModal-package
 #'
-#' @return A single cell multi-modal \linkS4class{MultiAssayExperiment} or
-#'     informative `data.frame` when `dry.run` is `TRUE`
+#' @return A single cell multi-modal
+#'   [MultiAssayExperiment][MultiAssayExperiment::MultiAssayExperiment-class] or
+#'   informative `data.frame` when `dry.run` is `TRUE`
 #'
-#' @source \url{https://www.ebi.ac.uk/ena/browser/view/PRJEB9051}
+#' @source <https://www.ebi.ac.uk/ena/browser/view/PRJEB9051>
 #'
 #' @references
 #'   Macaulay et al. (2015) G&T-seq: parallel sequencing of single-cell
@@ -66,8 +63,6 @@
 #'
 #'   Macaulay et al. (2016) Separation and parallel sequencing of the genomes
 #'   and transcriptomes of single cells using G&T-seq. Nat Protoc, 11:2081–103.
-#'
-#' @md
 #'
 #' @examples
 #'

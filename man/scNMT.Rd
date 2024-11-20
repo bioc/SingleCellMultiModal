@@ -17,22 +17,22 @@ scNMT(
 )
 }
 \arguments{
-\item{DataType}{character(1) Indicates study that produces this type of
+\item{DataType}{\code{character(1)} Indicates study that produces this type of
 data (default: 'mouse_gastrulation')}
 
-\item{modes}{character() A wildcard / glob pattern of modes, such as
+\item{modes}{\code{character()} A wildcard / glob pattern of modes, such as
 \code{"acc*"}. A wildcard of \code{"*"} will return all modes including
 Chromatin Accessibilty ("acc"), Methylation ("met"), RNA-seq ("rna")
 which is the default.}
 
-\item{version}{character(1) Either version '1.0.0' or '2.0.0' depending on
+\item{version}{\code{character(1)} Either version '1.0.0' or '2.0.0' depending on
 data version required (default '1.0.0'). See version section.}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{...}{Additional arguments passed on to the
 \link[ExperimentHub]{ExperimentHub-class} constructor}

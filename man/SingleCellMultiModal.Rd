@@ -14,7 +14,7 @@ SingleCellMultiModal(
 )
 }
 \arguments{
-\item{DataTypes}{character() A vector of data types as indicated in each
+\item{DataTypes}{\code{character()} A vector of data types as indicated in each
 individual function by the \code{DataType} parameter. These can be any of
 the following: "mouse_gastrulation", "pbmc_10x",
 "macrophage_differentiation", "cord_blood", "peripheral_blood",
@@ -23,14 +23,14 @@ the following: "mouse_gastrulation", "pbmc_10x",
 \item{modes}{list() A list or CharacterList of modes for each data type
 where each element corresponds to one data type.}
 
-\item{versions}{character() A vector of versions for each DataType. By
+\item{versions}{\code{character()} A vector of versions for each DataType. By
 default, version \verb{1.0.0} is obtained for all data types.}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{...}{Additional arguments passed on to the
 \link[ExperimentHub]{ExperimentHub-class} constructor}

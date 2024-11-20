@@ -14,12 +14,12 @@
 #' @section scmmCache:
 #' Get the directory location of the cache. It will prompt the user to create
 #' a cache if not already created. A specific directory can be used via
-#' \code{setCache}.
+#' `setCache`.
 #'
 #' @section setCache:
 #' Specify the directory location of the data cache. By default, it will
 #' go into the user's home and package name directory as given by
-#' \link[tools:userdir]{R_user_dir} (default: varies by system e.g., for Linux:
+#' [R_user_dir][tools::R_user_dir] (default: varies by system e.g., for Linux:
 #' '$HOME/.cache/R/SingleCellMultiModal').
 #'
 #' @section removeCache:
@@ -27,21 +27,19 @@
 #' the user to delete the tarball associated with a study number in the
 #' cache.
 #'
-#' @param directory character(1) The file location where the cache is located.
+#' @param directory `character(1)` The file location where the cache is located.
 #' Once set, future downloads will go to this folder. See `setCache` section
 #' for details.
 #'
 #' @param verbose Whether to print descriptive messages
 #'
-#' @param ask logical(1) (default TRUE when `interactive()`) Confirm the file
+#' @param ask `logical(1)` (default TRUE when `interactive()`) Confirm the file
 #' location of the cache directory
 #'
-#' @param accession character(1) A single string indicating the accession number
+#' @param accession `character(1)` A single string indicating the accession number
 #' of the study
 #'
 #' @param ... For `scmmCache`, arguments passed to `setCache`
-#'
-#' @md
 #'
 #' @examples
 #' getOption("scmmCache")

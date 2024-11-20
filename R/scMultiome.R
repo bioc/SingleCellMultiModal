@@ -82,29 +82,26 @@
 
 #' Single-cell Multiome ATAC + Gene Expression
 #'
-#' @description 10x Genomics Multiome technology enables simultaneous profiling 
-#' of the transcriptome (using 3’ gene expression) and epigenome 
+#' @description 10x Genomics Multiome technology enables simultaneous profiling
+#' of the transcriptome (using 3’ gene expression) and epigenome
 #' (using ATAC-seq) from single cells to
 #' deepen our understanding of how genes are expressed and regulated across
 #' different cell types. Data prepared by Ricard Argelaguet.
 #'
 #' @details Users are able to choose from either an `MTX` or `HDF5` file format
-#'     as the internal data representation. The `MTX` (Matrix Market)
-#'     format allows users to load a sparse `dgCMatrix` representation.
-#'     Choosing `HDF5` gives users a sparse `HDF5Array` class object.
-#'     \itemize{pbmc_10x:} 10K Peripheral Blood Mononuclear Cells provided by
+#'   as the internal data representation. The `MTX` (Matrix Market) format
+#'   allows users to load a sparse `dgCMatrix` representation. Choosing `HDF5`
+#'   gives users a sparse `HDF5Array` class object.
+#'     * pbmc_10x: 10K Peripheral Blood Mononuclear Cells provided by
 #' [10x Genomics website](https://support.10xgenomics.com/single-cell-multiome-atac-gex/datasets)
-#'      Cell quality control filters are available in the object `colData`
-#'      together with the `celltype` annotation labels.
-#'     
+#'     Cell quality control filters are available in the object `colData`
+#'     together with the `celltype` annotation labels.
 #'
 #' @inheritParams scNMT
 #'
-#' @param format Either MTX or HDF5 data format (default MTX)
+#' @param format `character(1)` Either MTX or HDF5 data format (default MTX)
 #'
 #' @return A 10X PBMC `MultiAssayExperiment` object
-#'
-#' @md
 #'
 #' @examples
 #'

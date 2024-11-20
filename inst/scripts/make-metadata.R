@@ -248,26 +248,26 @@ MetaHubCreate <-
 #'
 #' @param directory The base folder for _all_ datasets
 #'
-#' @param dataDirs character() A vector of folder names contained in directory
+#' @param dataDirs `character()` A vector of folder names contained in directory
 #'     that corresponds to each project. For multiple versions, repeat the
 #'     name of the folder.
 #'
-#' @param version character() A vector of subfolder versions that is parallel
+#' @param version `character()` A vector of subfolder versions that is parallel
 #'     to `dataDirs` argument, typically `v1.0.0`.
 #'
-#' @param ext_pattern character(1) A string that matches files within the
+#' @param ext_pattern `character(1)` A string that matches files within the
 #'     above folders to find the data.
 #'
-#' @param doc_file character(1) A path to the documentation `data.frame` that
+#' @param doc_file `character(1)` A path to the documentation `data.frame` that
 #'     tells the function how to fill in the standard columns for data
 #'     annotation, for example `DataProvider`, `TaxonomyId`, etc.
 #'
-#' @param pkg_name character(1) The name of the current package
+#' @param pkg_name `character(1)` The name of the current package
 #'
-#' @param dry.run logical(1) Whether to (over)write the `metadata.csv` file or
+#' @param dry.run `logical(1)` Whether to (over)write the `metadata.csv` file or
 #'     return as output.
 #'
-#' @param append logical(1) Whether to append to the current `metadata.csv`
+#' @param append `logical(1)` Whether to append to the current `metadata.csv`
 #'     file
 #'
 #' @return Saves a file under `/inst/extdata/metadata.csv`
@@ -302,8 +302,6 @@ MetaHubCreate <-
 #'     pkg_name = "SingleCellMultiModal",
 #'     dry.run = TRUE,
 #' )
-#'
-#' @md
 #'
 #' @export
 make_metadata <- function(

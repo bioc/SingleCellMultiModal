@@ -27,13 +27,13 @@
 #'
 #' @inheritParams scNMT
 #'
-#' @param DataTypes character() A vector of data types as indicated in each
+#' @param DataTypes `character()` A vector of data types as indicated in each
 #'     individual function by the `DataType` parameter. These can be any of
 #'     the following: "mouse_gastrulation", "pbmc_10x",
 #'     "macrophage_differentiation", "cord_blood", "peripheral_blood",
 #'     "mouse_visual_cortex", "mouse_embryo_8_cell"
 #'
-#' @param versions character() A vector of versions for each DataType. By
+#' @param versions `character()` A vector of versions for each DataType. By
 #'     default, version `1.0.0` is obtained for all data types.
 #'
 #' @param modes list() A list or CharacterList of modes for each data type
@@ -46,8 +46,6 @@
 #'     function call used to generate the object (labeled as `call`),
 #'     a `call_map` which provides traceability of technology functions to
 #'     `DataType` prefixes, and lastly, R version information as `version`.
-#'
-#' @md
 #'
 #' @examples
 #'

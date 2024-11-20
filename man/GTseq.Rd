@@ -17,27 +17,28 @@ GTseq(
 )
 }
 \arguments{
-\item{DataType}{character(1) Indicates study that produces this type of
+\item{DataType}{\code{character(1)} Indicates study that produces this type of
 data (default: 'mouse_embryo_8_cell')}
 
-\item{modes}{character() A wildcard / glob pattern of modes, such as
+\item{modes}{\code{character()} A wildcard / glob pattern of modes, such as
 \code{"*omic"}. A wildcard of \code{"*"} will return all modes including
 copy numbers ("genomic") and RNA-seq read counts ("transcriptomic"),
 which is the default.}
 
-\item{version}{character(1). Currently, only version '1.0.0'.}
+\item{version}{\code{character(1)} Currently, only version '1.0.0'.}
 
-\item{dry.run}{logical(1) Whether to return the dataset names before actual
-download (default TRUE)}
+\item{dry.run}{\code{logical(1)} Whether to return the dataset names before actual
+download (default \code{TRUE})}
 
-\item{verbose}{logical(1) Whether to show the dataset currently being
-(down)loaded (default TRUE)}
+\item{verbose}{\code{logical(1)} Whether to show the dataset currently being
+(down)loaded (default \code{TRUE})}
 
 \item{...}{Additional arguments passed on to the
 \link[ExperimentHub:ExperimentHub-class]{ExperimentHub} constructor}
 }
 \value{
-A single cell multi-modal \linkS4class{MultiAssayExperiment} or
+A single cell multi-modal
+\link[MultiAssayExperiment:MultiAssayExperiment-class]{MultiAssayExperiment} or
 informative \code{data.frame} when \code{dry.run} is \code{TRUE}
 }
 \description{
@@ -53,15 +54,11 @@ Protocol information for this dataset is available from Macaulay et al.
 G&T-seq is a combination of Picoplex amplified gDNA sequencing
 (genome) and SMARTSeq2 amplified cDNA sequencing (transcriptome) of the
 same cell. For more information, see Macaulay et al. (2015).
-\itemize{
-\item{mouse_embryo_8_cell:}
+* mouse_embryo_8_cell:
 this dataset was filtered for bad cells as specified in Macaulay
 et al. (2015).
-\itemize{
-\item{genomic} - integer copy numbers as detected from scDNA-seq
-\item{transcriptomic} - raw read counts as quantified from scRNA-seq
-}
-}
+* genomic - integer copy numbers as detected from scDNA-seq
+* transcriptomic - raw read counts as quantified from scRNA-seq
 }
 \section{metadata}{
 

@@ -1,14 +1,14 @@
 
 #' addCTLabels
 #'
-#' @param cd the \code{colData} \code{DataFrame}
-#' @param out list data structure returned by \code{getCellGroups}
+#' @param cd the `colData` `DataFrame`
+#' @param out list data structure returned by `getCellGroups`
 #' @param outname character indicating the name of the out data structure
-#' @param ct character indicating the celltype to assign in the \code{ctcol}
+#' @param ct character indicating the celltype to assign in the `ctcol`
 #' @param mkrcol character indicating the cd column to store the markers
-#' indicated by \code{outname} (default is markers)
+#' indicated by `outname` (default is markers)
 #' @param ctcol character indicating the column in cd to store the cell type
-#' indicated by \code{ct} (default is celltype)
+#' indicated by `ct` (default is celltype)
 #' @param overwrite logical indicating if the cell types have to be overwritten
 #' without checking if detected barcodes were already assigned to other celltypes
 #' @param verbose logical for having informative messages during the execution

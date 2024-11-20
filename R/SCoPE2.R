@@ -4,39 +4,35 @@
 #'   a
 #'   [`MultiAssayExperiment`][MultiAssayExperiment::MultiAssayExperiment-class]
 #'   container. The `DataType` argument provides access to the `SCoPE2` dataset
-#'   as provided by Specht et al. (2020; DOI: http://dx.doi.org/10.1101/665307).
-#'   The article provides more information about the data acquisition and
-#'   pre-processing.
+#'   as provided by Specht et al. (2020; DOI:
+#'   <http://dx.doi.org/10.1101/665307>). The article provides more information
+#'   about the data acquisition and pre-processing.
 #'
 #' @details The SCoPE2 study combines scRNA-seq (transcriptome) and
 #'   single-cell proteomics.
 #'
-#'   \itemize{
-#'       \item{macrophage_differentiation:} the cells are monocytes that undergo
+#'   * macrophage_differentiation: the cells are monocytes that undergo
 #'   macrophage differentiation. No annotation is available for the
 #'   transcriptome data, but batch and cell type annotations are
 #'   available for the proteomics data in the `celltype` `colData` column.
 #'   The transcriptomics and proteomics data were not measured from the same
 #'   cells but from a distinct set of cell cultures.
 #'   This dataset provides already filtered bad quality cells.
-#'       \itemize{
-#'           \item{scRNAseq1} - single-cell transcriptome (batch 1)
-#'           \item{scRNAseq2} - single-cell transcriptome (batch 2)
-#'           \item{scp} - single-cell proteomics
-#'       }
-#'   }
+#'       * scRNAseq1 - single-cell transcriptome (batch 1)
+#'       * scRNAseq2 - single-cell transcriptome (batch 2)
+#'       * scp - single-cell proteomics
 #'
 #' @inheritParams scNMT
 #'
-#' @param DataType character(1) Indicates study that produces this type of
+#' @param DataType `character(1)` Indicates study that produces this type of
 #'   data (default: 'macrophage_differentiation')
 #'
-#' @param modes character() A wildcard / glob pattern of modes, such as
+#' @param modes `character()` A wildcard / glob pattern of modes, such as
 #'   `"rna"`. A wildcard of `"*"` will return all modes, that are
 #'   transcriptome ("rna") or proteome ("protein") which is the
 #'   default.
 #'
-#' @param version character(1), currently only version '1.0.0' is
+#' @param version `character(1)`, currently only version '1.0.0' is
 #'   available
 #'
 #' @return A single cell multi-modal
@@ -46,7 +42,7 @@
 #' @seealso SingleCellMultiModal-package
 #'
 #' @source All files are linked from the slavovlab website
-#'     \url{https://scope2.slavovlab.net/docs/data}
+#'     <https://scope2.slavovlab.net/docs/data>
 #'
 #' @references
 #'   Specht, Harrison, Edward Emmott, Aleksandra A. Petelski, R.
@@ -54,8 +50,6 @@
 #'   Antonius Koller, and Nikolai Slavov. 2020. “Single-Cell
 #'   Proteomic and Transcriptomic Analysis of Macrophage
 #'   Heterogeneity.” bioRxiv. https://doi.org/10.1101/665307.
-#'
-#' @md
 #'
 #' @examples
 #'
